@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* Ayuda a que el navegador entienda ambos temas */
+@layer base {
+  :root { color-scheme: light; --scroll-thumb: #94a3b8; }
+  .dark { color-scheme: dark; --scroll-thumb: #475569; }
+  html, body, #root { height: 100%; }
+  /* Scrollbar */
+  * { scrollbar-width: thin; scrollbar-color: var(--scroll-thumb) transparent; }
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-thumb { background: var(--scroll-thumb); border-radius: 8px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+}
