@@ -5,7 +5,6 @@ import {
   Server, Cpu, Database, Cloud, MessageCircle, FileDown
 } from "lucide-react";
 
-/* -------- Minimal UI -------- */
 function Card({ className = "", children }) {
   return (
     <div className={`rounded-2xl border bg-white/50 dark:bg-slate-900/50 border-slate-200 dark:border-slate-800 ${className}`}>
@@ -83,12 +82,12 @@ export default function Portfolio() {
   };
   const t = useMemo(() => dict[lang], [lang]);
 
-  /* ---- Perfil & Links ---- */
+
   const profile = useMemo(() => ({
     name: "Víctor Aroon Ordinola Cano",
     brand: "Victor Ordinola",
     email: "aron.ordi456@gmail.com",
-    phone: "+51 941 210 140",
+    phone: "+51 982 675 867",
     whatsapp: "https://wa.me/51941210140",
     avatarUrl: "/profile.jpg",
     location: "Lima, Peru",
@@ -97,10 +96,10 @@ export default function Portfolio() {
   const links = useMemo(() => ({
     github: "https://github.com/Aroon17",
     linkedin: "https://www.linkedin.com/in/victor-aroon-ordinola-cano-57a276303/",
-    // website: eliminado del navbar
+
   }), []);
 
-  /* ---- Proyectos (multi-idioma) ---- */
+
   const projects = useMemo(() => [
     {
       title: { en: "Barber Shop Website", es: "Barber Shop Website" },
